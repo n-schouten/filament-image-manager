@@ -27,3 +27,10 @@ After installation you need to publish the migrations with the following command
 ```
 
 You may publish the configuration file, this is however not necessary. You can use ```php artisan vendor:publish --image-manager-config```
+
+After this, install the package as a plugin in your Filament Panel Service Provider ```panel()``` function
+```bash
+  use NSchouten\FilamentImageManager\ImageManagerPlugin;
+
+  $panel->plugin(new ImageManagerPlugin())
+```
