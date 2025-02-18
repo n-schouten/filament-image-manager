@@ -1,0 +1,21 @@
+{
+    "name": "n-schouten/filament-image-manager",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "NSchouten\\FilamentImageManager\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "version": "1.0",
+    "require": {
+        "spatie/image": "^3.8"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "NSchouten\\FilamentImageManager\\ImageManagerServiceProvider"
+            ]
+        }
+    }
+}
