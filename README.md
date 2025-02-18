@@ -3,6 +3,13 @@
 
 A simple yet powerful image manager for Laravel Filament
 
+## Features
+
+- Field for Filament to select or upload an image
+- Working with different disks/directories
+- Filament Resource for overview of all images
+- Performing conversions with ```Spatie/Image```
+- Soft Deletes of Images, cleaning up the database record and belonging files after a set amount of days.
 
 ## Installation
 
