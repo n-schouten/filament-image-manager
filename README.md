@@ -22,9 +22,8 @@ You can install this package with Composer. Make sure Laravel & Filament are ins
 After installation you need to publish the migrations with the following command:
 ```bash
   php artisan vendor:publish --tag=image-manager-migrations
+
+  php artisan migrate
 ```
 
-You also may publish the configuration file, this is however not necessary:
-```bash
-  php artisan vendor:publish --image-manager-config
-```
+You may publish the configuration file, this is however not necessary. You can use ```php artisan vendor:publish --image-manager-config```
