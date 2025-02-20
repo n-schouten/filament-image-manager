@@ -7,7 +7,7 @@
         }
     },
     "minimum-stability": "stable",
-    "version": "1.0",
+    "version": "1.0.1",
     "require": {
         "spatie/image": "^3.8"
     },
