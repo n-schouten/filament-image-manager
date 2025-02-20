@@ -27,7 +27,7 @@ After installing, you need to publish the migrations and migrate by running the 
   php artisan migrate
 ```
 
-You can publish the configuration file, although it is not required. To do so, run the following command: ```php artisan vendor:publish --image-manager-config```
+You can publish the configuration file, although it is not required. To do so, run the following command: ```php artisan vendor:publish --tag=image-manager-config```
 
 ## Installation as Filament Plugin
 
