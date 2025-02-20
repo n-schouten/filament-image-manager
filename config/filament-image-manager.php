@@ -31,5 +31,8 @@ return [
     'autoRemoveAfter'   => 30
 
     // Specifies if an Resource Link is visible in the topbar
-    'topbar'            => true
+    'topbar'            => true,
+
+    // Specifies if the image resource is visible in the navigation
+    'navigation'        => true
 ];
