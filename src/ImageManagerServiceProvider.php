@@ -100,10 +100,10 @@ class ImageManagerServiceProvider extends ServiceProvider
                         <x-filament::button 
                             size="sm"
                             icon="heroicon-m-photo"
-                            href="' . \NSchouten\FilamentImageManager\Filament\Resources\ImagesResource::getUrl('index') . '"
+                            href="'.\NSchouten\FilamentImageManager\Filament\Resources\ImagesResource::getUrl("index").'"
                             tag="a"
                             outlined
-                        >Media</x-filament::button>
+                        >{{__("image-manager::resources.images.plural")}}</x-filament::button>
                 '),
             );
         }
