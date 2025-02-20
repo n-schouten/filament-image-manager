@@ -64,6 +64,7 @@ class ImageManagerServiceProvider extends ServiceProvider
 
         $this->registerGate();
         $this->registerCommands();
+        $this->registerRenderHooks();
     }
 
     /**
@@ -84,6 +85,26 @@ class ImageManagerServiceProvider extends ServiceProvider
             Gate::policy(
                 \NSchouten\FilamentImageManager\Filament\Resources\ImagesResource::getModel(),
                 config('image-manager.policy')
+            );
+        }
+    }
+
+    /**
+     * Register the render hooks
+     */
+    protected function registerRenderHooks():void {
+        if(config('image-manager.topbar') === true) {
+            \Filament\Support\Facades\FilamentView::registerRenderHook(
+                \Filament\View\PanelsRenderHook::GLOBAL_SEARCH_AFTER,
+                fn (): string => \Illuminate\Support\Facades\Blade::render('
+                        <x-filament::button 
+                            size="sm"
+                            icon="heroicon-m-photo"
+                            href="' . \NSchouten\FilamentImageManager\Filament\Resources\ImagesResource::getUrl('index') . '"
+                            tag="a"
+                            outlined
+                        >Media</x-filament::button>
+                '),
             );
         }
     }
