@@ -117,4 +117,9 @@ class ImagesResource extends Resource
     {
         return __('image-manager::resources.images.plural');
     }
+
+    public static function shouldRegisterNavigation(): bool
+    {
+        return config('image-manager.navigation');
+    }
 }
