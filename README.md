@@ -27,6 +27,8 @@ After installing, you need to publish the migrations and migrate by running the 
   php artisan migrate
 ```
 
+In case you are using the ```public``` disk, make sure a symbolic link has been made from source directory storage/app/public to target directory public/storage. You can do this with ```php artisan storage:link```
+
 You can publish the configuration file, although it is not required. To do so, run the following command: ```php artisan vendor:publish --tag=image-manager-config```
 
 ## Installation as Filament Plugin
