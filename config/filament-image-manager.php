@@ -28,7 +28,7 @@ return [
     'model'             => NSchouten\FilamentImageManager\Models\Image::class,
 
     // Sets the number of days after which images will be automatically removed (here, 30 days).
-    'autoRemoveAfter'   => 30
+    'autoRemoveAfter'   => 30,
 
     // Specifies if an Resource Link is visible in the topbar
     'topbar'            => true,
