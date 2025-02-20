@@ -16,7 +16,7 @@ A simple yet powerful image manager for Laravel Filament
 You can install this package using Composer. Ensure that Laravel and Filament are already set up in your main project before proceeding. This package will also install the [Spatie/Image](https://github.com/spatie/image)-package.
 
 ```bash
-  composer install n-schouten/filament-image-manager
+  composer require n-schouten/filament-image-manager
 ```
 
 After installing, you need to publish the migrations and migrate by running the following commands:
