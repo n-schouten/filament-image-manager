@@ -13,7 +13,7 @@
         <div class="flex flex-col gap-4">
             <div class="flex gap-2 flex-wrap justify-center rounded-lg p-4 max-h-96 overflow-auto">
                 @if($images->isEmpty())
-                    {{__('image-manager::select.non_found')}}
+                    {{__('image-manager::select.none_found')}}
                 @else
                     @foreach($images as $image)
                         <div class="rounded-lg w-32 h-32 overflow-hidden cursor-pointer" @click="$dispatch('close-modal',{id:'filament-select-image'});$dispatch('select-image',{field:'{{$this->field}}',url:'{{$image->url}}',id:'{{$image->id}}' })">
